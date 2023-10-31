@@ -18,9 +18,13 @@
 // Déclaration de la fonction
 
 function presenter(prenom, age) {
+    console.log(`Tu t'appelles ${prenom} et tu as ${age} ans`);
     // Utilisez les paramètres prenom et age pour l'affichage
     // par exemple : console.log("Tu t'appelles " + prenom + " et tu as " + age + " ans");
 }
+
+presenter("Garance", 10);
+presenter(6, "Prosper");
 
 // Appels de fonction avec passage de paramètres
 

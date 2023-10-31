@@ -14,17 +14,43 @@ N.B. Faites deux versions :
 
 // Syntaxe classique
 
+function calcMin(nbre1, nbre2) {
+    if (nbre1 < nbre2) {
+        return nbre1;
+    } else (nbre1 > nbre2)
+    {
+        return nbre2;
+    }
+}
 
 // Utilisation de la fonction calcMin pour calculer le minimum
 
+console.log(calcMin(4.5, 5));
+console.log(calcMin(19, 9));
+console.log(calcMin(1, 1));
 
 // Version avec une arrow function
 
+const calcMinArrow= (nbre1, nbre2) => {
+    if (nbre1 < nbre2) {
+        return nbre1;
+    } else (nbre1 > nbre2)
+    {
+        return nbre2;
+    }
+    return `le minimum entre ${nbre1} et ${nbre2} est ` + calcMinArrow()
+}
+
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
 
+console.log(calcMinArrow(4.5, 5));
+console.log(calcMinArrow(19, 9));
+console.log(calcMinArrow(1, 1));
 
 // Version encore plus concise avec une arrow function
+
 const calcMinConcise = (a, b) => (a < b) ? a : b;
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
 
+console.log(calcMinConcise(19, 9));

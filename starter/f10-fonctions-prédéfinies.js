@@ -15,9 +15,14 @@ Utiliser la fonction Math.min pour afficher dans la console
 - le minimum de 1 et 1
 */
 
-console.log(Math.min(4.5, 5)); // 4.5
-console.log(Math.min(19, 9));  // 9
-console.log(Math.min(1, 1));   // 1
+let minimum1 = Math.min(4.5, 5);
+console.log(`le minimum de 4.5 et 5 est ${minimum1}`);
+
+let minimum2 = Math.min(19, 9);
+console.log(`le minimum de 19 et 9 est ${minimum2}`);
+
+let minimum3 = Math.min(1, 1);
+console.log(`le minimum de 1 et 1 est ${minimum3}`);
 
 // La fonction Math.random() génère un nombre aléatoire entre 0 et 1
 
@@ -28,7 +33,14 @@ Utiliser la fonction Math.random pour afficher dans la console
 - un nombre aléatoire compris entre 5 (inclus) et 15 (exclu)
 */
 
-console.log(Math.random()); // Un nombre aléatoire entre 0 et 1
+let nbre1 = Math.random();
+console.log(nbre1);
+
+let nbre2 = Math.floor(Math.random() * 10);
+console.log(nbre2);
+
+let nbre3 = Math.floor(Math.random() * 15);
+console.log(nbre3);
 
 // Nous découvrirons plein d'autres fonctions prédéfinies dans la suite de ce cours.
 
